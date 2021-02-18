@@ -14,7 +14,7 @@ class App extends React.Component {
         data: { movies }
       }
     } = await axios.get(
-      "http://www.kobis.or.kr/kobisopenapi/webservice/rest/movie/searchMovieList.json?key=4765bdad583d64e8b1235c086e11f035"
+      "https://yts-proxy.now.sh/list_movies.json?sort_by=ratin"
     );
     this.setState({movies, isLoading: false});
   };
